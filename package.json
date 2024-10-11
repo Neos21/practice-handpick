@@ -1,0 +1,51 @@
+{
+  "name": "practice-handpick",
+  "description": "Practice Handpick",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite preview --host",
+    "dev"  : "vite --host",
+    "build": "tsc --build && vite build",
+    
+    "install-lint": "handpick --target=lintDependencies",
+    "lint"        : "eslint --fix .",
+    
+    "handpick": "handpick"
+  },
+  "author": "Neo <neos21@gmail.com> (https://neos21.net/)",
+  "license": "MIT",
+  "homepage": "https://github.com/Neos21/practice-handpick#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neos21/practice-handpick.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Neos21/practice-handpick/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/Neos21"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.11",
+    "@types/react-dom": "18.3.0",
+    "@vitejs/plugin-react": "4.3.2",
+    "handpick": "7.1.1",
+    "typescript": "5.6.3",
+    "vite": "5.4.8"
+  },
+  "lintDependencies": {
+    "@eslint/js": "9.12.0",
+    "eslint": "9.12.0",
+    "eslint-plugin-react": "7.37.1",
+    "eslint-plugin-react-hooks": "5.1.0-rc-fb9a90fa48-20240614",
+    "eslint-plugin-react-refresh": "0.4.12",
+    "globals": "15.11.0",
+    "typescript-eslint": "8.8.1"
+  }
+}
