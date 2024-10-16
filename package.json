@@ -8,8 +8,9 @@
     "dev"  : "vite --host",
     "build": "tsc --build && vite build",
     
-    "install-lint": "handpick --target=lintDependencies",
-    "lint"        : "eslint --fix .",
+    "install-only-lint": "handpick --target=lintDependencies",
+    "install-with-lint": "handpick --target=dependencies --target=devDependencies --target=lintDependencies",
+    "lint"             : "eslint --fix .",
     
     "handpick": "handpick"
   },
